@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Vibrant but soft pastel pink background */
+  background-color: #ffd1dc; /* Cute Bubblegum Pastel Pink */
+  
+  /* Floating pill frame */
+  margin: 1.5rem 2rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 40px;
+  
+  /* Decorative borders for a cute 3D cutout / sticker look */
+  border: 3px solid #f3e8ff; /* Soft lavender border outline */
+  
+  /* Cute purple/pink glow effect */
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.2); 
+  
+  position: sticky;
+  top: 1rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #6b21a8; /* Deep aesthetic purple for contrast */
+  text-shadow: 1px 1px 0px #fff; /* Cute sticker text effect */
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #6b21a8; /* Dark purple text to match the logo */
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state: switches to a cute soft lavender button with white text */
+.nav-links a:hover {
+  color: white;
+  background-color: #b8a2e3; /* Dreamy Pastel Lavender */
+  box-shadow: 0 4px 8px rgba(107, 33, 168, 0.15);
+  transform: scale(1.05); /* Fun little pop-up bounce */
+}
+
+/* Responsive adjustment for phones */
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0.8rem 1rem;
+    padding: 0.6rem 1.2rem;
+    border-width: 2px;
+  }
+  .nav-links {
+    gap: 0.3rem;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

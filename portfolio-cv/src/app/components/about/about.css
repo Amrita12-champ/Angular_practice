@@ -1,0 +1,213 @@
+.about-section {
+  padding: 5rem 10%;
+  background-color: #faf5ff; /* Soft pastel lavender tint */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #ffffff;
+  padding: 3.5rem;
+  border-radius: 40px; /* Pillow soft edges */
+  box-shadow: 0 12px 35px rgba(107, 33, 168, 0.04);
+  border: 3px solid #ffd1dc; /* Cute pink border line */
+  max-width: 850px;
+  width: 100%;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.cute-emoji {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #6b21a8;
+  margin: 0.5rem 0 0 0;
+  font-weight: 800;
+}
+
+.heart-divider {
+  color: #ec4899;
+  letter-spacing: 3px;
+  margin-top: 0.4rem;
+}
+
+/* Current Status Banner */
+.current-status-box {
+  background-color: #fff1f2; /* Light blush pink background */
+  border-left: 5px solid #ec4899;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #059669; /* Active status green */
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(5, 150, 105, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+}
+
+.current-status-box p {
+  margin: 0;
+  color: #57534e;
+  font-size: 1rem;
+}
+
+/* CV Layout Sections */
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+h3 {
+  color: #6b21a8;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  border-bottom: 2px dashed #ffd1dc;
+  padding-bottom: 0.5rem;
+}
+
+/* Cute Pastel Timeline Setup */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  border-left: 3px dashed #b8a2e3; /* Soft purple dashed line */
+  margin-left: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: -3.6rem;
+  background-color: #fff;
+  border: 2px solid #b8a2e3;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.timeline-content h4 {
+  margin: 0 0 0.2rem 0;
+  color: #1c1917;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.institute-name {
+  margin: 0 0 0.4rem 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.timeline-date {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* Skills Formatting */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: #ffd1dc;
+  color: #db2777;
+  transform: translateY(-2px);
+}
+
+/* Certifications Layout */
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-list li {
+  font-size: 1.05rem;
+  color: #57534e;
+  padding: 0.6rem 1rem;
+  background-color: #fdf4ff; /* Super light pastel purple row tint */
+  margin-bottom: 0.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Download Button styling */
+.cv-action {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #ec4899;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #ffffff;
+  color: #ec4899;
+  border: 2px solid #ec4899;
+  transform: translateY(-3px);
+}
+
+/* Screen size handling */
+@media (max-width: 768px) {
+  .about-card { padding: 2rem 1.5rem; }
+  h2 { font-size: 1.8rem; }
+}
