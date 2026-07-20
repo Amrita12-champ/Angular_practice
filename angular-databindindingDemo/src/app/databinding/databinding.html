@@ -1,0 +1,48 @@
+
+<div style="max-width: 400px; margin: 30px auto; padding: 20px; border: 2px solid #040c38; border-radius: 10px; font-family: Arial, sans-serif;">
+  <h2 style="color: #3f51b5; text-align: center;">Angular Binding Form</h2>
+
+  
+  <div style="margin-bottom: 15px;">
+    <label><strong>Name:</strong></label><br />
+    <input type="text" [(ngModel)]="userName" placeholder="Enter your name" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;" />
+  </div>
+
+
+  <div style="margin-bottom: 15px;">
+    <label><strong>Gender:</strong></label>
+    <ul style="list-style-type: disc; margin-top: 5px; padding-left: 20px;">
+      <li>
+        <label>
+          <input type="radio" name="genderOption" value="Male" [(ngModel)]="gender" /> Male
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="genderOption" value="Female" [(ngModel)]="gender" /> Female
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="genderOption" value="Other" [(ngModel)]="gender" /> Other
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  
+  <button 
+    (click)="onSubmit()" 
+    [disabled]="!userName.trim()" 
+    style="width: 100%; padding: 10px; background-color: #3f51b5; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Submit
+  </button>
+
+  <hr style="margin: 20px 0;" />
+
+ 
+  <div style="background-color: #f4f4f9; padding: 10px; border-radius: 6px;">
+    <p><strong>Live Name:</strong> {{ userName || 'Not entered' }}</p>
+    <p><strong>Live Gender:</strong> {{ gender }}</p>
+  </div>
+</div>
