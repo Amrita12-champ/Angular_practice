@@ -1,0 +1,21 @@
+<!-- src/app/calculator/calculator.component.html -->
+<div style="padding: 20px;">
+  <h2>Simple Calculator</h2>
+
+  <!-- First Input Number -->
+  <input type="number" [(ngModel)]="num1" (input)="onInputChange()" placeholder="Num 1" />
+
+  <!-- Operator Selector -->
+  <select [(ngModel)]="operator" (change)="onInputChange()">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+
+  <!-- Second Input Number -->
+  <input type="number" [(ngModel)]="num2" (input)="onInputChange()" placeholder="Num 2" />
+
+  <!-- Result Display -->
+  <h3>Result: {{ result }}</h3>
+</div>
